@@ -220,4 +220,38 @@ Pada dasarnya variabel **own_telephone**, **foreign_worker**, dan **class** dapa
 Berdasarkan hasil korelasi ini tidak ditemukan bagian yang menunjukkan variabel class karena class masih berupa tipe data category. Untuk dapat melihat hasil dari korelasi class maka akan dilakukan data preparation terlebih dahulu. Namun, berdasarkan heatmap yang sudah ada dapat dilihat bahwa tidak ada korelasi yang cukup besar antar variabel kecuali besaran kredit dengan durasinya.
 
 ## Data Preparation
+Data preparation merupakan proses yang melibatkan beberapa langkah untuk mengubah data mentah menjadi format yang sesuai dan siap digunakan dalam analisis atau model prediktif. Pada proyek ini digunakan beberapa metode data preparation dimulai dari yang paling standar yaitu mencari missing value hingga feature scaling.
+
 ### Memeriksa Missing Value
+Memeriksa missing value merupakan metode untuk mencari value yang hilang atau kosong. Kosong ini dapat berbentuk tidak ada data, NaN, atau bertuliskan unknown. Namun, tidak semua tulisan unknown merupakan missing value terkadang none atau unknown dapat juga merupakan sebuah kategori yang valid yang menggambarkan keadaan pada saat itu. Pemeriksaan ini bertujuan untuk memastikan kualitas dari data dengan memastikan data sudah sesuai. Pemeriksaan menggunakan **isnull()** untuk melihat value kosong dan juga dilakukan pemeriksaan data dengan tulisan unknown dan yang memungkinkan, namun untuk kata none tidak dianggap sebagai missing value karena merupakan sebuah kategori. Didapatkan bahwa tidak terdapat missing value pada data
+
+### Memeriksa Data Duplikat
+Memeriksa data duplikat dilakukan untuk mencari data yang sama persis dengan data lainnya (duplikat). Data duplikat akan lebih baik untuk dihapus untuk menjamin kualitas data dan memastikan tidak adanya bias. Pada proyek ini pemeriksaan menggunakan **duplicated()**
+
+### Outlier Handling
+Proses ini merupakan proses mengidentifikasi, menganalisis, dan menangani data yang menyimpang jauh dari sebagian besar data lainnya. Proses ini perlu dilakukan karena adanya outlier akan menurunkan kualitas data dan memungkinkan terjadinya bias serta untuk dapat meningkatkan akurasi dari model yang dimiliki. Handling dari outlier ini dilakukan dengan menghapus data dengan outliers. Pada proyek ini dilakukan outlier handling dengan metode 
+z_hold dengan menggunakan threshold 3 dan didapatkan 48 data yang dihapus dikarenakan mengandung outliers sehingga saat ini hanya tersisa 952 data.
+
+### Melakukan categorical encoding
+Categorical encoding merupakan proses mengubah variabel kategorikal menjadi format numerik sehingga dapat digunakan dalam Machine Learning hal ini disebabkan banyak algoritma Machine Learning yang tidak dapat memproses data categorical. Sehingga proses ini perlu dilakukan agar data dapat diproses pada seluruh algoritma Machine Learning dan juga untuk mengurangi adanya kesalahan interpretasi. Pada proyek ini dilakukan encoding dengan menggunakan label encoding, sebelum melakukan encoding terhadap variabel categorical, dilakukan terlebih dahulu encoding untuk tiga variabel **own_telephone**, **foreign_worker**, dan **class** menjadi 1, 0 kemudian dilakukan encoding menggunakan label encoding yaitu konversi setiap kategori menjadi nilai numerik yang unik. 
+
+### Korelasi setelah pembersihan data
+Pada bagian ini dilakukan perhitungan korelasi antara variabel yang sudah mengalami pembersihan data sehingga seluruh data sudah memiliki tipe data yang sama dan tidak ada outliers lagi. Berikut hasil korelasi tersebut
+
+![image](https://github.com/tasyyaa/Credit-Risk-Classification/assets/100066633/9aaac8c9-fb52-4fd6-810e-9602d968bf33)
+![download (5)](https://github.com/tasyyaa/Credit-Risk-Classification/assets/100066633/751812b3-b3e3-4c1b-b2d7-c82dd0b9af57)
+
+Berdasarkan hasil di atas sudah dapat terlihat korelasi antara variabel dengan variabel target yaitu class. Jika dilihat berdasarkan hasil korelasi tidak ada korelasi yang cukup kuat antara variabel independen dengan variabel target baik positif atau negatif. Namun, diputuskan untuk menggunakan tiga variabel dengan korelasi terkuat yaitu **checking_status**, **purpose**, dan **age**
+
+### PCA
+Principal Component Analysis (PCA) merupakan teknik statistik yang digunakan untuk mengurangi dimensi data dengan cara mengubah data asli yang memiliki banyak variabel menjadi beberapa variabel utama. Tujuan dari PCA ini adalah untuk mengurangi dimensi data sehingga mengurangi kekompleksan data dan mengurangi overfitting juga. Pada proyek ini dilakukan PCA untuk ketiga variabel yang akan digunakan tadi yaitu **checking_status**, **purpose**, dan **age**. Kemudian ketiganya dirangkum ke dalam suatu variabel bernama PCA.
+
+### Data Balancing
+Data balancing merupakan proses penyeimbangan jumlah sampel di setiap variabel pada dataset yang tidak seimbang. Hal ini dilakukan untuk menghindari terjadinya bias pada model karena terdapat lebih banyak data pada suatu kategori. Di kasus proyek ini data balancing dilakukan untuk menyeimbangkan data dari variabel class yang sebelumnya sebanyak **677 data** merupakan **risiko kredit baik** dan **275 data** merupakan **risiko kredit buruk**. Hal ini terlihat sangat tidak seimbang dan berisiko untuk bias menghasilkan risiko kredit baik karena model lebih sering mendapatkan data tersebut. Oleh karena itu dilakukan data balancing dengan **balancer** yang kemudian menghasilkan **677 data** untuk data risiko kredit baik maupun buruk.
+
+### Data Splitting
+Data splitting adalah proses membagi dataset menjadi dua subset terpisah yaitu training dataset dan testing dataset. Training dataset dibuat untuk digunakan dalam melatih model sedangkan testing dataset dibuat untuk menguji performa model terhadap data yang belum pernah dilihatnya. Proses ini perlu dilakukan karena untuk dapat melihat kinerja model apakah model sudah berjalan baik atau masih overfitting maupun underfitting. Data splitting pada studi kasus kali ini menggunakan library dari sklearn.model_selection yaitu train_test_split dengan membagi menjadi **80%** data training dan **20%** data testing. Pembagian ini didasarkan oleh jumlah data training yang harus lebih banyak dari data testing. Jumlah sampel data train adalah **1083 data** dan jumlah sampel data test adalah **271 data**
+
+### Feature Scaling
+Feature scaling merupakan proses normalisasi atau standarisasi dari variabel-variabel dalam dataset sehingga masing-masing memiliki skala yang serupa. Tujuan utamanya adalah untuk memastikan bahwa semua fitur memiliki pengaruh yang seimbang terhadap model machine learning. Pada kasus ini dilakukan feature scaling pada variabel dengan persebaran yang besar yaitu **duration**, **credit_amount**, dan **PCA** yang memiliki standar devisiasi besar tidak seperti variabel lainnya. Feature scaling dilakukan dengan menggunakan **StandardScaler()** dan hasil setelah feature scaling yaitu seluruh standar devisiasi berada pada rentang **1**
+
