@@ -62,7 +62,7 @@ Pada tahap data understanding ini dilakukan beberapa tahapan yang bertujuan untu
 
 ### Data Information and Description
 Tahapan ini dilakukan untuk mengetahui berapa baris data yang dimiliki oleh dataset dan bagaimana tipe datanya. Berdasarkan hasil didapatkan bahwa data Credit Risk memiliki baris sejumlah **1000 data** dengan tiap variabelnya memiliki tipe data sebagai berikut
-
+![image](https://github.com/tasyyaa/Credit-Risk-Classification/assets/100066633/40af5102-1f09-4ff1-a508-e6bdb95adc54)
 
 ### Explanatory Data Analysis (EDA)
 
