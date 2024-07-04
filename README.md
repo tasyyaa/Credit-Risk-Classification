@@ -5,11 +5,11 @@ Laporan ini disusun untuk memenuhi persyaratan *Submission* Proyek Pertama Machi
 ## Domain Proyek
   Topik yang diangkat dari proyek ini yaitu mengenai bidang ekonomi dan bisnis yang berfokus pada evaluasi risiko kredit suatu nasabah di perbankan. Evaluasi ini bertujuan untuk menentukan bahwa nasabah layak untuk mendapatkan kredit atau tidak.
 ### Latar Belakang
-  Sebagai negara berkembang, Indonesia, dalam meningkatkan pertumbuhan ekonomi tidak dapat dipisahkan dari peran bank. Salah satu peran bank yang dianggap cukup penting adalah pemberian kredit kepada masyarakat. Hal ini dapat mendukung perekonomian dan meningkatkan standar hidup masyarakat [1]. Namun, tidak semua kredit yang diberikan dapat berjalan dengan lancar. Menurut data Otoritas Jasa Keuangan (OJK) pada tahun 2015-2019, rata-rata jumlah kredit macet atau pinjaman bermasalah di Indonesia berada pada angka 2.37%-3.93% dan menurut data Bank Mandiri sendiri besar kredit macet di Bank Mandiri mencapai Rp1,2 Triliun [2]. Tentu hal tersebut bukanlah angka yang kecil. 
+  Sebagai negara berkembang, Indonesia, dalam meningkatkan pertumbuhan ekonomi tidak dapat dipisahkan dari peran bank. Salah satu peran bank yang dianggap cukup penting adalah pemberian kredit kepada masyarakat. Hal ini dapat mendukung perekonomian dan meningkatkan standar hidup masyarakat [1](https://e-jurnal.lppmunsera.org/index.php/Akuntansi/article/view/4346/2133). Namun, tidak semua kredit yang diberikan dapat berjalan dengan lancar. Menurut data Otoritas Jasa Keuangan (OJK) pada tahun 2015-2019, rata-rata jumlah kredit macet atau pinjaman bermasalah di Indonesia berada pada angka 2.37%-3.93% dan menurut data Bank Mandiri sendiri besar kredit macet di Bank Mandiri mencapai Rp1,2 Triliun [2](https://www.researchgate.net/publication/375099791_Determinants_of_going-concern_audit_opinion). Tentu hal tersebut bukanlah angka yang kecil. 
   
-  Besarnya total kredit macet ini jelas menjadi suatu perhatian bagi bank karena banyaknya dampak buruk dari adanya kredit macet ini. Dampak buruk tersebut, antara lain arus kas yang tidak lancar. Hal ini dapat menyebabkan bank tidak lagi mampu memberikan kredit kepada nasabah lainnya. Selain itu, peningkatan tingkat kredit macet dapat mengganggu profitabilitas perusahaan [3]. Salah satu ukuran profitabilitas yang menurun adalah Return on Assets (ROA), penurunan ini disebabkan oleh kinerja perusahaan yang kurang optimal dalam menggunakan asetnya. Kemudian, Loan to Deposit Ratio adalah ukuran kemampuan bank untuk membiayai kembali dana yang ditarik oleh deposan, dan memiliki dampak positif pada bank dalam bentuk pendapatan, misalnya dalam bentuk kredit. Tingkat likuiditas yang rendah di sebuah bank dapat menyebabkan perubahan dalam profitabilitas perusahaan yang menurun [4]. Hal ini terjadi karena perusahaan tidak mampu mendistribusikan dana tersebut.
+  Besarnya total kredit macet ini jelas menjadi suatu perhatian bagi bank karena banyaknya dampak buruk dari adanya kredit macet ini. Dampak buruk tersebut, antara lain arus kas yang tidak lancar. Hal ini dapat menyebabkan bank tidak lagi mampu memberikan kredit kepada nasabah lainnya. Selain itu, peningkatan tingkat kredit macet dapat mengganggu profitabilitas perusahaan [1][3]. Salah satu ukuran profitabilitas yang menurun adalah Return on Assets (ROA), penurunan ini disebabkan oleh kinerja perusahaan yang kurang optimal dalam menggunakan asetnya. Kemudian, Loan to Deposit Ratio adalah ukuran kemampuan bank untuk membiayai kembali dana yang ditarik oleh deposan, dan memiliki dampak positif pada bank dalam bentuk pendapatan, misalnya dalam bentuk kredit. Tingkat likuiditas yang rendah di sebuah bank dapat menyebabkan perubahan dalam profitabilitas perusahaan yang menurun [4](https://journal.uii.ac.id/ajie/article/view/7953). Hal ini terjadi karena perusahaan tidak mampu mendistribusikan dana tersebut.
   
-  Maka dari itu, untuk dapat menyelesaikan permasalahan tersebut dilakukan penilaian credit risk dari nasabah yang akan melakukan kredit di bank untuk menilai kelayakan suatu nasabah dalam mendapatkan kredit dan kemampuannya dalam menyelesaikan kredit tersebut. Selain itu, semakin gentarnya credit risk ini juga disebabkan oleh ekonomi dunia berada dalam risiko krisis keuangan lainnya akibat evaluasi risiko kredit yang tidak efektif sebut IMF [5]. Betapa pentingnya evaluasi risiko kredit ini yang menjadi dasar dari dibuatnya program klasifikasi risiko kredit untuk dapat menyelesaikan permasalahan ini.
+  Maka dari itu, untuk dapat menyelesaikan permasalahan tersebut dilakukan penilaian credit risk dari nasabah yang akan melakukan kredit di bank untuk menilai kelayakan suatu nasabah dalam mendapatkan kredit dan kemampuannya dalam menyelesaikan kredit tersebut. Selain itu, semakin gentarnya credit risk ini juga disebabkan oleh ekonomi dunia berada dalam risiko krisis keuangan lainnya akibat evaluasi risiko kredit yang tidak efektif sebut IMF [5](https://link.springer.com/article/10.1007/s42786-020-00020-3). Betapa pentingnya evaluasi risiko kredit ini yang menjadi dasar dari dibuatnya program klasifikasi risiko kredit untuk dapat menyelesaikan permasalahan ini.
 
 ## Business Understanding
   Bagian ini akan membahas mengenai problem statements, goals, dan solution statements berdasarkan latar belakang yang telah dijabarkan.
@@ -30,7 +30,7 @@ Berdasarkan problem statements dan goals yang telah dibuat, maka terdapat soluti
 3. Melakukan validasi dan pengujian model menggunakan metode cross-validation dan evaluasi metrik seperti akurasi, precision, recall, dan F1-score untuk memastikan model yang dipilih memiliki kinerja yang baik.
    
 ## Data Understanding
-Dataset yang digunakan pada proyek klasifikasi risiko kredit nasabah ini merupakan dataset yang dimiliki oleh [https://www.kaggle.com/ppb00x] yang dirilisnya di platform Kaggle tahun 2023 yang dapat diakses pada link berikut [https://www.kaggle.com/datasets/ppb00x/credit-risk-customers/data].
+Dataset yang digunakan pada proyek klasifikasi risiko kredit nasabah ini merupakan dataset yang dimiliki oleh [srihari](https://www.kaggle.com/ppb00x) yang dirilisnya di platform [Kaggle](https://www.kaggle.com/) tahun 2023 yang dapat diakses pada link berikut [Credit Risk Dataset](https://www.kaggle.com/datasets/ppb00x/credit-risk-customers/data).
 
 Pada tahap data understanding ini dilakukan beberapa tahapan yang bertujuan untuk dapat memehami lebih lanjut mengenai dataset yang sedang digunakan. Pertama-tama adalah penjelasan mengenai setiap variabel atau feature yang akan digunakan yang terdapat pada dataset ini
 
@@ -241,7 +241,7 @@ Pada bagian ini dilakukan perhitungan korelasi antara variabel yang sudah mengal
 ![image](https://github.com/tasyyaa/Credit-Risk-Classification/assets/100066633/9aaac8c9-fb52-4fd6-810e-9602d968bf33)
 ![download (5)](https://github.com/tasyyaa/Credit-Risk-Classification/assets/100066633/751812b3-b3e3-4c1b-b2d7-c82dd0b9af57)
 
-Berdasarkan hasil di atas sudah dapat terlihat korelasi antara variabel dengan variabel target yaitu class. Jika dilihat berdasarkan hasil korelasi tidak ada korelasi yang cukup kuat antara variabel independen dengan variabel target baik positif atau negatif. Namun, diputuskan untuk menggunakan tiga variabel dengan korelasi terkuat yaitu **checking_status**, **purpose**, dan **age**
+Berdasarkan hasil di atas sudah dapat terlihat korelasi antara variabel dengan variabel target yaitu class. Jika dilihat berdasarkan hasil korelasi tidak ada korelasi yang cukup kuat antara variabel independen dengan variabel target baik positif atau negatif. Namun, diputuskan untuk menggunakan tiga variabel dengan korelasi terkuat yaitu **checking_status**, **purpose**, dan **age**. Dan jika dilihat dari hasil tersebut dapat dikatakan pula bahwa variabel yang paling membuat suatu nasabah dikatakan rentan memiliki risiko kredit buruk yaitu **credit_history, foreign_worker, installment_commitment, credit_amount, dan duration** karena memiliki korelasi yang cukup besar dan berbentuk negatif walaupun dalam perhitungan korelasi tidak kuat namun diantara variabel lain variabel tersebut yang memiliki korelasi negatif terkuat. 
 
 ### PCA
 Principal Component Analysis (PCA) merupakan teknik statistik yang digunakan untuk mengurangi dimensi data dengan cara mengubah data asli yang memiliki banyak variabel menjadi beberapa variabel utama. Tujuan dari PCA ini adalah untuk mengurangi dimensi data sehingga mengurangi kekompleksan data dan mengurangi overfitting juga. Pada proyek ini dilakukan PCA untuk ketiga variabel yang akan digunakan tadi yaitu **checking_status**, **purpose**, dan **age**. Kemudian ketiganya dirangkum ke dalam suatu variabel bernama PCA.
@@ -255,3 +255,135 @@ Data splitting adalah proses membagi dataset menjadi dua subset terpisah yaitu t
 ### Feature Scaling
 Feature scaling merupakan proses normalisasi atau standarisasi dari variabel-variabel dalam dataset sehingga masing-masing memiliki skala yang serupa. Tujuan utamanya adalah untuk memastikan bahwa semua fitur memiliki pengaruh yang seimbang terhadap model machine learning. Pada kasus ini dilakukan feature scaling pada variabel dengan persebaran yang besar yaitu **duration**, **credit_amount**, dan **PCA** yang memiliki standar devisiasi besar tidak seperti variabel lainnya. Feature scaling dilakukan dengan menggunakan **StandardScaler()** dan hasil setelah feature scaling yaitu seluruh standar devisiasi berada pada rentang **1**
 
+## Modeling
+Pada tahap ini dilakukan pembuatan model dari Machine Learning yang bertujuan untuk membentuk model klasifikasi risiko kredit dengan baik. Terdapa lima algoritma klasifikasi yang digunakan pada tahap ini, yaitu **Decision Tree**, **K-Nearest Neighbor**, **Backpropagation Neural Network**, **Random Forest**, dan **Logistic Regression**. Tahapan yang dilakukan pada modelin diawali dengan membuat grid search dari parameter untuk mencari parameter terbaik sesuai dengan data yang dimiliki dan tahap selanjutnya sekaligus menjadi tahap terakhir adalah melakukan training model sesuai dengan parameter yang didapatkan dari search grid menggunakan training dataset dan melakukan testing model dengan testing dataset. Hasil yang didapatkan akan digunakan untuk menghitung kinerja dari model pada evaluasinya yang langsung dimasukkan pada kode yang ada yaitu F1_Score, ROC AUC, Accuracy, dan recall. Berdasarkan algoritma yang dipilih berikut merupakan penjelasan dan alasan dari pemilihan algoritma-algoritma tersebut
+
+### Decision Tree
+Decision Tree merupakan salah satu algoritma Machine Learning yang digunakan dalam kasus klasifikasi dengan membagi dataset menjadi subset berdasarkan fitur dan nilai tertentu dan membentuk struktur pohon (decision tree). Setiap node internal dalam pohon mewakili fitur, cabang mewakili kondisi atau aturan pengambilan keputusan, dan daun mewakili hasil atau output dari keputusan.
+- **Kelebihan**
+  - Mudah dimenegerti dan diinterpretasikan
+  - Sederhana dan mudah untuk diterapkan
+  - Tidak membutuhkan praproses data yang kompleks
+  - Mampu menangani data numerical maupun categorical
+  - Mampu menangani outliers
+ 
+- **Kekurangan**
+  - Rentang mengalami overfitting
+  - Rentan mengalami bias apabila terdapat data imbalancing
+  - Tidak sesuai dengan skala data yang besar
+ 
+### K-Nearest Neighbor
+K-Nearest Neighbors (K-NN) adalah algoritma machine learning yang dapat digunakan dalam kasus klasifikasi. KNN bekerja dengan cara mengklasifikasikan data baru berdasarkan kedekatan (kemiripan) dengan data yang sudah ada dalam dataset. 
+- **Kelebihan**
+  - Sederhana dan mudah dimengerti
+  - Tidak memerlukan pelatihan model (lebih baik jika dilatih terlebih dahulu
+  - Fleksibel dan adaptif
+ 
+- **Kelemahan**
+  - Komputasi yang mahal
+  - Kebutuhan memori tinggi
+  - Pada dimensi tinggi kinerja akan menurun
+
+### Backpropagation Neural Network
+Backpropagation adalah algoritma yang digunakan untuk melatih jaringan saraf tiruan (neural networks), khususnya untuk tugas klasifikasi. Algoritma ini memanfaatkan gradien turun (gradient descent) untuk meminimalkan fungsi kerugian (loss function) dengan menyesuaikan bobot jaringan berdasarkan kesalahan yang dihitung pada keluaran.
+- **Kelebihan**
+  - Mampu memahami hubungan kompleks
+  - Fleksibilitas dalam arsitektur
+  - Kemampuan untuk generalisasi data
+
+- **Kelemahan**
+  - Kebutuhan data yang besar
+  - Komputasi mahal
+  - Berisiko mengalami overfitting
+  - Pemilihan parameter yang sulit
+
+### Random Forest
+Random Forest adalah algoritma machine learning berbasis ensemble yang digunakan untuk kasus klasifikasi. Algoritma ini bekerja dengan membangun banyak pohon keputusan (decision trees) selama pelatihan dan menghasilkan kelas (untuk klasifikasi) sebagai output akhirnya. Random Forest merupakan perpanjangan dari metode bagging yang menggunakan pohon keputusan sebagai model dasar.
+- **Kelebihan**
+  - Akurasi yang tinggi
+  - Kuat menghadapi overfitting
+  - Mampu menangani missing value
+  - Mampu menangani data yang besar
+
+- **Kelemahan**
+  - Komputasi yang mahal
+  - Interpretasi kompleks
+  - Memori yang tinggi
+  - Kecepatan prediksi yang lama
+
+### Logistic Regression
+Logistic Regression adalah algoritma machine learning yang digunakan untuk tugas klasifikasi biner (dua kelas). Meskipun namanya "regression", logistic regression sebenarnya adalah metode klasifikasi yang memprediksi probabilitas bahwa suatu instance termasuk dalam kategori tertentu.
+- **Kelebihan**
+  - Sederhana dan mudah dimengerti
+  - Efisien
+  - Tidak membutuhkan banyak parameter
+
+- **Kelemahan**
+  - Tidak efektif untuk data yang rumit
+  - Tidak bekerja baik dengan fitur yang tidak relevan
+  - Rentang mengalami overfitting
+
+Berdasarkan penjelasan dari kelima model algoritma tersebut, maka dipilih satu model algoritma terbaik yang akan digunakan pada proyek ini karena dianggap cocok untuk dapat menyelesaikan sesuai dengan kelebihan dan kelemahannya. Dipilih algoritma **Random Forest** sebab algoritma tersebut dapat menghasilkan akurasi yang tinggi dan tidak rentan menghadapi overfitting. Kelemahannya pun dapat diterima karena kelemahan seperti interpretasi yang kompleks, komputasi mahal, dan membutuhkan memori banyak tidak akan terlalu berpengaruh sebab data yang dimiliki tidak besar. Pemilihan algoritma ini juga akan diperkuat dengan hasil evaluasi model pada bagian selanjutnya.
+
+## Evaluasi
+Proses ini merupakan proses untuk menilai kinerja dari model Machine Learning yang telah dilatih dan sangat penting untuk dilakukan untuk memastikan bahwa model bekerja dengan baik pada data yang belum dilihat sebelumnya yaitu menggunakan data testing. Pada tahapan ini juga akan ditentukan algoritma mana yang akan dipilih sesuai dengan kinerjanya. Pada proyek ini sesuai dengan permasalahan maka digunakan tiga metrik evaluasi yang akan dijadikan perbandingan, yaitu **f1-score, ROC AUC, dan Accuracy**. Namun juga akan ditunjukkan hasil dari metrik akurasi dari **precision dan recall**
+
+- **F1-Score**
+  F1 Score adalah metrik evaluasi yang digunakan untuk mengukur kinerja model klasifikasi. Ini adalah harmonic mean dari precision dan recall, yang memberikan gambaran keseimbangan antara keduanya. F1-score berada pada skala 0-1 dengan semakin mendekati 1 berarti semakin baik dan 0 semakin buruk, dan secara umum F1-score baik jika di atas 0.7
+
+- **ROC-AUC**
+  ROC AUC (Receiver Operating Characteristic - Area Under Curve) adalah metrik evaluasi yang digunakan untuk menilai kinerja model klasifikasi biner. ROC AUC mengukur kemampuan model untuk membedakan antara kelas positif dan negatif dengan memplot True Positive Rate (TPR) melawan False Positive Rate (FPR) pada berbagai threshold klasifikasi. Nilai dari ROC-AUC berada pada 0.5-1 dengan 1 merupakan paling baik dan 0.5 yang terburuk.
+
+- **accuracy**
+  Akurasi adalah salah satu metrik evaluasi yang paling sederhana dan umum digunakan dalam evaluasi kinerja model klasifikasi. Akurasi mengukur seberapa sering model klasifikasi benar dalam memprediksi kelas data. Accuracy berada pada kisaran 0-1 atau 0-100% dalam persentase. Semakin mendekati 100% maka model dikatakan semakin sempurna.
+
+- **Precision**
+  Precision atau presisi adalah metrik evaluasi yang mengukur seberapa akurat model dalam memprediksi contoh positif dari semua contoh yang diprediksi sebagai positif. Precision memberikan informasi tentang seberapa banyak dari prediksi positif yang sebenarnya benar. Penggunaan metrik ini dalam evaluasinya harus dilakukan dengan metrik lain yaitu recall, F1-Score, dan ROC AUC
+
+- **Recall**
+  Recall, juga dikenal sebagai sensitivitas atau true positive rate (TPR), adalah metrik evaluasi yang mengukur seberapa baik model dalam menemukan semua instance dari kelas positif yang sebenarnya. Recall mengukur kemampuan model untuk mendeteksi semua kasus positif dengan minimal false negatives. Sama seperti Precisionn, metrik ini juga perlu dievaluasi dengan metrik evaluasi lainnya.
+
+### Hasil evaluasi
+Berikut merupakan hasil evaluasi masing-masing model dari algoritma
+- Decision Tree
+  
+  ![image](https://github.com/tasyyaa/Credit-Risk-Classification/assets/100066633/24273b8c-4f24-4e66-add9-dbeedaf88e55)
+
+Hasil dari evaluasi decition tree berada pada rentang 0.78-0.80
+
+- K-Nearest Neighbor
+  
+  ![image](https://github.com/tasyyaa/Credit-Risk-Classification/assets/100066633/4cad908a-c2e3-4d52-8077-13dc6eae6ddd)
+
+Hasil dari algoritma ini lebih baik dibandingkan decision tree dengan rentang 0.83-0.84
+
+- Backpropagation Neural Network
+  
+  ![image](https://github.com/tasyyaa/Credit-Risk-Classification/assets/100066633/fb708092-da88-4d8b-9761-98a0d5a8288f)
+
+Hasil ini jauh lebih rendah dibandingkan algoritma lain yaitu dengan rentang hasil evaluasi 0.65-0.66
+
+- Random Forest
+  
+  ![image](https://github.com/tasyyaa/Credit-Risk-Classification/assets/100066633/2edc4e2e-5ad8-44e1-97e8-ea74864637a9)
+
+Hasil yang didapatkan jauh lebih baik dibandingkan semua model algoritma lainnya dengan rentang 0.86-0.87
+
+- Logistic Regression
+  
+  ![image](https://github.com/tasyyaa/Credit-Risk-Classification/assets/100066633/091af955-e666-421f-9bd0-c2264e5e2684)
+
+Hasil yang didapatkan jauh lebih rendah dibandingkan semua algoritma lain bahkan lebih rendah dibanding Backpropagation Neural Network dengan rentang 0.62-0.63
+
+Jika hasil dikumpulkan ke dalam tabel maka didapatkan seperti berikut
+
+![image](https://github.com/tasyyaa/Credit-Risk-Classification/assets/100066633/d56cfd14-43e4-4f6f-ae5b-e8ee14f20122)
+
+Dilihat dari hasil evaluasi didapatkan bahwa benar algoritma yang bekerja paling baik pada dataset ini adalah **Random Forest** dan dapat dikatakan bahwa random forest yang akan membuat model hasil klasifikasi terbaik untuk risiko kredit.
+
+## Referensi
+[1] Rini Syahril, F., & Nur Hidayah K, F. (2021). The impact of credit risk on the profitability with characteristics bank as control variables. Jurnal RAK (Riset Akuntansi Keuangan), 6(2), 239–253. https://doi.org/10.31002/rak.v6i2.5717 
+[2] Didied, Neni & Dwitama, Difa. (2023). Determinants of going-concern audit opinion. International Journal of Research in Business and Social Science (2147- 4478). 12. 345-357. 10.20525/ijrbs.v12i7.2882. 
+[3] Sinambela, V., & Susanti, M. (2021). InterestRates, Bad Loans and Profitability at Infobank 15. Scientific Journal of Ubhara Management , 3 (2), 22. https://doi.org/10.31599/jmu.v3i2,980
+[4] Afkar, T. (2017). Analysis of the Effect of Bad Credit and Liquidity Adequacy on Operational Cost  Efficiency  of  Islamic  Commercial  Banks  in  Indonesia. Ajie , 2 (2),  177–192. https://doi.org/10.20885/ajie.vol2.iss2.art8
+[5] Bhatore, S., Mohan, L. & Reddy, Y.R. Machine learning techniques for credit risk evaluation: a systematic literature review. J BANK FINANC TECHNOL 4, 111–138 (2020). https://doi.org/10.1007/s42786-020-00020-3
