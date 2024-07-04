@@ -381,6 +381,12 @@ Jika hasil dikumpulkan ke dalam tabel maka didapatkan seperti berikut
 
 Dilihat dari hasil evaluasi didapatkan bahwa benar algoritma yang bekerja paling baik pada dataset ini adalah **Random Forest** dan dapat dikatakan bahwa random forest yang akan membuat model hasil klasifikasi terbaik untuk risiko kredit.
 
+Berdasarkan hasil evaluasi tersebut didapatkan bahwa proyek ini berhasil untuk menyelesaikan permasalahan klasifikasi dari evaluasi kredit risiko. Berdasarkan hasil yang diperoleh mengenai hubungan antar variabel yang dimiliki oleh data dengan menggunakan korelasi didapatkan bahwa terdapat beberapa variabel yang mempengaruhi pergerakan dari variabel target yaitu class baik secara positif maupun negatif. Korelasi ini kemudian digunakan untuk menjawab permasalahan yang telah dirumuskan. Berdasarkan hasilnya didapatkan bahwa:
+1. Kriteria yang paling mempengaruhi nasabah dalam klasifikasinya menjadi risiko kredit baik adalah **checking_status**, **purpose**, dan **age**.
+2. Kriteria yang paling mempengaruhi suatu nasabah dapat diklasifikasikan sebagai risiko kredit yang buruk adalah **credit_history**, **foreign_worker**, **installment_commitment**, **credit_amount**, dan **duration**.
+3. Model klasifikasi yang paling baik dalam menyelesaikan permasalahan ini adalah model algoritma **Random Forest** karena memiliki hasil accuracy, F1-Score, dan ROC AUC terbaik dan berdasarkan kelebihan dan kelemahannya paling sesuai dengan karakteristik data yang telah didapatkan pada tahap Data Understanding.
+
+
 ## Referensi
 [1] Rini Syahril, F., & Nur Hidayah K, F. (2021). The impact of credit risk on the profitability with characteristics bank as control variables. Jurnal RAK (Riset Akuntansi Keuangan), 6(2), 239–253. https://doi.org/10.31002/rak.v6i2.5717 
 [2] Didied, Neni & Dwitama, Difa. (2023). Determinants of going-concern audit opinion. International Journal of Research in Business and Social Science (2147- 4478). 12. 345-357. 10.20525/ijrbs.v12i7.2882. 
