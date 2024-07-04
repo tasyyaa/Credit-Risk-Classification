@@ -35,32 +35,32 @@ Dataset yang digunakan pada proyek klasifikasi risiko kredit nasabah ini merupak
 Pada tahap data understanding ini dilakukan beberapa tahapan yang bertujuan untuk dapat memehami lebih lanjut mengenai dataset yang sedang digunakan. Pertama-tama adalah penjelasan mengenai setiap variabel atau feature yang akan digunakan yang terdapat pada dataset ini
 
 ### Variabel-variabel pada Credit Risk dataset adalah sebagai berikut:
-1. checking_status: The currently balance account
-2. duration: duration of the credit payment, in months.
-3. credit_history: Is the customer credit history. It can have the following values:
-   - existing paid: currently credit process;
-   - all paid: all the credit abre paid by the customer;
-   - delayed previously: past delays at the credit payment;
-   - critical/other existing credit: critical credit accounts;
-   - no credits/all paid: customer that never gets credit.b
-4. purpose: porpouse of the credit requested.
-5. credit_amount: Amount of the credit requested
-6. savings_status: Balance account of savings/ bond.
-7. employment:How many years the customer has employed.
-8. installment_commitment: Percentual that the customer cannot reach due to the income. When a customer takes a credit, the installment cannot ultrapass a percentual of customer income.
-9. personal_status: if is divorced, married, etc.
-10. other_parties: Another part involde on th credit, like guarantos ("fiador").
-11. residence_since: How many year the customer has in the country.
-12. property_magnitude: The good of the customer.
-13. age: The age of the customer.
-14. other_payment_plans: If the customer has another credit line and how the type (store, bank, etc).
-15. housing:The housing customer type, could be own, for free or rent.
-16. existing_credits: Number of existing credits at this bank.
-17. job: This represents whats type of job the customer has. Could be skilled, unskilled resident, high qualify/self emp/mgmt and unemp/unskilled non res.
-18. num_dependents: The number of depedents that live wth the customer.
-19. own_telephone: If the customer has a telephone.
-20. foreign_worker: If the customer is a foreign or not.
-21. class: Our target. If the credit is good or bad to the bank.
+1. **checking_status**: Status saat ini dari saldo rekening
+2. **duration**: Durasi pembayaran kredit, dalam bulan.
+3. **credit_history**: Riwayat kredit pelanggan. Nilai-nilai yang mungkin termasuk:
+   - existing paid: proses kredit saat ini;
+   - all paid: semua kredit sudah dibayar oleh pelanggan;
+   - delayed previously: tunggakan sebelumnya dalam pembayaran kredit;
+   - critical/other existing credit: akun kredit kritis;
+   - no credits/all paid: pelanggan yang tidak pernah mendapatkan kredit.
+4. **purpose**: Tujuan dari kredit yang diminta.
+5. **credit_amount**: Jumlah kredit yang diminta.
+6. **savings_status**: Status saldo tabungan/obligasi.
+7. **employment**:Berapa tahun pelanggan telah bekerja
+8. **installment_commitment**: Persentase yang tidak dapat dicapai pelanggan karena pendapatannya. Ketika pelanggan mengambil kredit, cicilan tidak boleh melebihi persentase pendapatan pelanggan.
+9. **personal_status**: Jika statusnya bercerai, menikah, dll.
+10. **other_parties**: Pihak lain yang terlibat dalam kredit, seperti penjamin ("fiador").
+11. **residence_since**: Berapa tahun pelanggan tinggal di negara tersebut.
+12. **property_magnitude**: Kekayaan pelanggan.
+13. **age**: Usia pelanggan.
+14. **other_payment_plans**: Jika pelanggan memiliki garis kredit lain dan tipe (toko, bank, dll).
+15. **housing**:Jenis tempat tinggal pelanggan, bisa milik sendiri, gratis, atau sewa.
+16. **existing_credits**: Jumlah kredit yang ada di bank ini.
+17. **job**: Menggambarkan jenis pekerjaan pelanggan. Bisa terampil, tidak terampil tinggal, tingkat tinggi/self emp/mgmt dan unemp/tidak terampil non res.
+18. **num_dependents**: Jumlah tanggungan yang tinggal bersama pelanggan.
+19. **own_telephone**: Jika pelanggan memiliki telepon.
+20. **foreign_worker**: Jika pelanggan adalah orang asing atau tidak.
+21. **class**: Variabel Target. Jika kredit baik atau buruk bagi bank.
 
 ### Data Information and Description
   Tahapan ini dilakukan untuk mengetahui berapa baris data yang dimiliki oleh dataset dan bagaimana tipe datanya. Berdasarkan hasil didapatkan bahwa data Credit Risk memiliki baris sejumlah **1000 data** dengan tiap variabelnya memiliki tipe data sebagai berikut
