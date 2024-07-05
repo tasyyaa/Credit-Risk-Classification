@@ -389,7 +389,11 @@ Berdasarkan hasil evaluasi tersebut didapatkan bahwa proyek ini berhasil untuk m
 
 ## Referensi
 [1] Rini Syahril, F., & Nur Hidayah K, F. (2021). The impact of credit risk on the profitability with characteristics bank as control variables. Jurnal RAK (Riset Akuntansi Keuangan), 6(2), 239–253. https://doi.org/10.31002/rak.v6i2.5717 
+
 [2] Didied, Neni & Dwitama, Difa. (2023). Determinants of going-concern audit opinion. International Journal of Research in Business and Social Science (2147- 4478). 12. 345-357. 10.20525/ijrbs.v12i7.2882. 
+
 [3] Sinambela, V., & Susanti, M. (2021). InterestRates, Bad Loans and Profitability at Infobank 15. Scientific Journal of Ubhara Management , 3 (2), 22. https://doi.org/10.31599/jmu.v3i2,980
+
 [4] Afkar, T. (2017). Analysis of the Effect of Bad Credit and Liquidity Adequacy on Operational Cost  Efficiency  of  Islamic  Commercial  Banks  in  Indonesia. Ajie , 2 (2),  177–192. https://doi.org/10.20885/ajie.vol2.iss2.art8
+
 [5] Bhatore, S., Mohan, L. & Reddy, Y.R. Machine learning techniques for credit risk evaluation: a systematic literature review. J BANK FINANC TECHNOL 4, 111–138 (2020). https://doi.org/10.1007/s42786-020-00020-3
