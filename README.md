@@ -1,5 +1,6 @@
-# Laporan Proyek Machine Learning - Tasya Putri Aliya
-**Credit Risk Classification**
+# Laporan Proyek Machine Learning - Credit Risk Classification
+by Tasya Putri
+
 Laporan ini disusun untuk memenuhi persyaratan *Submission* Proyek Pertama Machine Learning Terapan Dicoding.
 
 ## Domain Proyek
