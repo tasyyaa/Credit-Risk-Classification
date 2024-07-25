@@ -1,5 +1,7 @@
 # Laporan Proyek Machine Learning - Credit Risk Classification
-by Tasya Putri
+by tasyyaa
+
+**Notebook Link**: [Google Colab Jupyter Notebook](https://colab.research.google.com/drive/1w-qnUIcRjTmxDjPX_ZWVaElVyIaO1ElC?usp=sharing)
 
 Laporan ini disusun untuk memenuhi persyaratan *Submission* Proyek Pertama Machine Learning Terapan Dicoding.
 
